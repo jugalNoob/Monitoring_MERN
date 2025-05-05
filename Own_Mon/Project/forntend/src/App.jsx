@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Create from './page/Create';
-import Delete from './page/Delete';
-import File from './page/File';
+
 import Home from './page/Home';
-import Read from './page/Read';
+import Cpu from "./page/Cpu"
+import Req from './page/Req';
+
 
 const router = createBrowserRouter([ 
   {
@@ -13,25 +13,14 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/file", 
-    element: <File />
+    path: "/cpu", 
+    element: <Cpu/>
+  },
+  {
+    path: "/req", 
+    element: <Req/>
   },
 
-  {
-    path: "/create", 
-    element: <Create />
-  },
-
-  
-  {
-    path: "/read", 
-    element: <Read />
-  },
-
-  {
-    path: "/del", 
-    element: <Delete />
-  },
 ])
 
 function App() {
